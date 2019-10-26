@@ -1,0 +1,10 @@
+<ng-container *ngIf="inputResult.length==0">
+    <ul *ngFor="let data of arraData">
+        <li>{{data.title}}</li>
+    </ul>
+</ng-container>
+<ng-container *ngIf="inputResult.length>0">
+    <ul *ngFor="let data of searchResult">
+        <li>{{data.title}}</li>
+    </ul>
+</ng-container>
